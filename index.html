@@ -5,41 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href=""><img src="./images/logo.svg" alt="site logo" /></a>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#prices">Services and prices</a></li>
-          <li><a href="#masters">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+    <header class="header">
+      <nav class="navigation">
+        <a class="logo link" href=""
+          ><img class="logo-img" src="./images/logo.svg" alt="site logo"
+        /></a>
+
+        <ul class="nav-list list">
+          <li class="nav-list-item"><a class="nav-list-link link" href="#about">About</a></li>
+          <li class="nav-list-item">
+            <a class="nav-list-link link" href="#prices">Services and prices</a>
+          </li>
+          <li class="nav-list-item"><a class="nav-list-link link" href="#masters">Barbers</a></li>
+          <li class="nav-list-item"><a class="nav-list-link link" href="#contacts">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="contact-number link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="modal-btn" type="button">Online-booking</button>
     </header>
     <main>
-      <section>
-        <ul>
-          <li><a href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-        </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
-          We are experts in trendy men's haircuts. <br />
-          We work quickly, carefully and with style.
-        </p>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left-side">
+          <ul class="social-links-list">
+            <li class="social-links-list-item list">
+              <a
+                class="social-links-list-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-links-list-item list">
+              <a
+                class="social-links-list-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hero-right-side">
+          <p class="overtitle">A hair salon for men in Kyiv</p>
+          <h1 class="main-title">BarberShop</h1>
+          <p class="description description-dark-theme">
+            We are experts in trendy men's haircuts. <br />
+            We work quickly, carefully and with style.
+          </p>
+        </div>
       </section>
-      <section id="about">
+      <!-- ABOUT  -->
+      <section class="section-about" id="about">
         <ul>
-          <li>
+          <li class="list">
             <img src="./images/about-img-1.jpg" alt="Barber shaves neck" width="270" height="445" />
           </li>
-          <li>
+          <li class="list">
             <img
               src="./images/about-img-2.jpg"
               alt="Barber shaves the back of head"
@@ -48,20 +81,21 @@
             />
           </li>
         </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-        <p>
+        <p class="overtitle">About</p>
+        <h2 class="section-title section-title-light-theme">Best Barbershop in your city</h2>
+        <p class="description description-light-theme">
+          We are experts in tr>If you want to add more confidence to your image, you should definitely visit us.</p>
+        <p class="">
           We are a team that never stops at what has been achieved and are thirsty for changes. And
           when you fall into the hands of our master, you will never be the same again. We are a
           team that is always "on the same wave" with clients. Therefore, we are always ready to
           improve everyone who comes to us!
         </p>
-        <button type="button">ONLINE-BOOKING</button>
+        <button class="modal-btn" type="button">ONLINE-BOOKING</button>
       </section>
       <section id="prices">
         <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
+        <h2 class="section-title section-title-dark-theme">Services and prices</h2>
         <ul>
           <li>
             <p>Men’s haircut</p>
@@ -120,7 +154,7 @@
           </li>
         </ul>
         <p>Old traditional school</p>
-        <h2>Why people come to us?</h2>
+        <h2 class="section-title section-title-light-theme">Why people come to us?</h2>
         <p>
           Only good things are said about us. But it's better to see and feel 1 time than read 10
           times.
@@ -128,7 +162,7 @@
       </section>
       <section id="masters">
         <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
+        <h2 class="section-title section-title-light-theme">Our barbers</h2>
         <ul>
           <li>
             <img
@@ -162,6 +196,7 @@
           </li>
         </ul>
       </section>
+      <!-- GALLARY -->
       <section>
         <p>In Latin, "barba" means "beard"</p>
         <h2 hidden>Gallary</h2>
@@ -200,8 +235,9 @@
           </li>
         </ul>
       </section>
+      <!-- ONLINE_BOOKING -->
       <section>
-        <h2>Online-booking</h2>
+        <h2 class="section-title section-title-dark-theme">Online-booking</h2>
       </section>
       <section id="contacts">
         <h2>Contacts</h2>
