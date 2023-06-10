@@ -3,13 +3,16 @@
   --secondary-font-family: 'Raleway', sans-serif;
   --primary-text-color-theme-dark: #9da4bd;
   --secondary-text-color-theme-dark: #ffffff;
+  --overtitle-color-theme--dark: rgba(157, 164, 189, 0.6);
   --primary-text-color-theme-light: #555555;
   --secondary-text-color-theme-light: #303030;
+  --overtitle-color-theme-light: #303030;
   --accent-color: #ff6c00;
 }
 
 body {
   font-family: var(--primary-font-famity);
+  background-color: aquamarine;
 }
 .list {
   list-style: none;
@@ -27,7 +30,15 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  /* color: var(--secondary-text-color-theme-dark); */
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+.modal-btn-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}
+.modal-btn-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -52,15 +63,21 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
 }
+.overtitle-theme-dark {
+  color: var(--overtitle-color-theme--dark);
+}
+.overtitle-theme-light {
+  color: var(--overtitle-color-theme-light);
+}
+
 .main-title {
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
 }
 .description {
   font-weight: 400;
@@ -88,7 +105,7 @@ body {
   color: var(--secondary-text-color-theme-light);
 }
 .section-title-dark-theme {
-  /* color: var(--secondary-text-color-theme-dark) */
+  color: var(--secondary-text-color-theme-dark);
 }
 /* END COMPONENTS */
 
@@ -98,7 +115,7 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
 }
 
 .nav-list-link:hover,
@@ -110,7 +127,7 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
 }
 .contact-number:hover,
 .contact-number:focus {
@@ -123,5 +140,70 @@ body {
 /* END HERO */
 
 /* START ABOUT */
-
+.paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
 /* END ABOUT */
+
+/* START PRICES */
+/* END PRICES */
+
+/* START EXPIRIENCE */
+.expirience-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-theme-light);
+  
+}
+.expirience-number-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--secondary-text-color-theme-light);
+  
+}
+/* END EXPIRIENCE */
+
+/* START TEAM */
+.team-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+.team-profession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* END TEAM */
+
+/* START ONLINE_BOOKING */
+.address {
+  font-style: normal;
+}
+.address-name {
+  font-weight: 700;
+}
+.working-hours{
+    color: var(--secondary-text-color-theme-dark);
+}
+/* END ONLINE_BOOKING */
+/* START FOOTER */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--primary-text-color-theme-dark);
+}
+/* END FOOTER */
