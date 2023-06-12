@@ -12,7 +12,29 @@
 
 body {
   font-family: var(--primary-font-famity);
-  background-color: aquamarine;
+  background-color: pink;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
 }
 .list {
   list-style: none;
@@ -21,6 +43,18 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 /* START COMPONENTS */
 .modal-btn {
   font-family: inherit;
@@ -30,9 +64,12 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+
   background-color: transparent;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  padding: 12px 16px;
+  min-width: 160px;
 }
 .modal-btn-theme-light {
   color: var(--secondary-text-color-theme-light);
@@ -63,12 +100,15 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .overtitle-theme-dark {
   color: var(--overtitle-color-theme--dark);
+  margin-bottom: 44px;
 }
 .overtitle-theme-light {
   color: var(--overtitle-color-theme-light);
+  margin-bottom: 20px;
 }
 
 .main-title {
@@ -110,6 +150,33 @@ body {
 /* END COMPONENTS */
 
 /* START HEADER */
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .nav-list-link {
   font-weight: 600;
   font-size: 12px;
@@ -128,6 +195,8 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--secondary-text-color-theme-dark);
+  margin-left: auto;
+  margin-right: 40px;
 }
 .contact-number:hover,
 .contact-number:focus {
@@ -159,43 +228,64 @@ body {
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color-theme-light);
-  
 }
 .expirience-number-description {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: var(--secondary-text-color-theme-light);
-  
 }
 /* END EXPIRIENCE */
 
 /* START TEAM */
+.section-team {
+  background-color: #f7f7f7;
+}
+
 .team-name {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 8px;
 }
 .team-profession {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--accent-color);
+}
+.section-team .section-title {
+  margin-bottom: 44px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-card {
+  flex-basis: calc(100% - 3 * 30px) / 3;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.team-contants-wrapper{
+  padding-top: 30px;
 }
 /* END TEAM */
 
 /* START ONLINE_BOOKING */
 .address {
-  font-style: normal;
 }
 .address-name {
   font-weight: 700;
 }
-.working-hours{
-    color: var(--secondary-text-color-theme-dark);
+.working-hours {
+  color: var(--secondary-text-color-theme-dark);
 }
 /* END ONLINE_BOOKING */
 /* START FOOTER */
