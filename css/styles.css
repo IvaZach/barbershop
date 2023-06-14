@@ -3,7 +3,7 @@
   --secondary-font-family: 'Raleway', sans-serif;
   --primary-text-color-theme-dark: #9da4bd;
   --secondary-text-color-theme-dark: #ffffff;
-  --overtitle-color-theme--dark: rgba(157, 164, 189, 0.6);
+  --overtitle-color-theme-dark: rgba(157, 164, 189, 0.6);
   --primary-text-color-theme-light: #555555;
   --secondary-text-color-theme-light: #303030;
   --overtitle-color-theme-light: #303030;
@@ -12,7 +12,6 @@
 
 body {
   font-family: var(--primary-font-famity);
-  background-color: pink;
 }
 h1,
 h2,
@@ -103,22 +102,12 @@ address {
   margin-bottom: 20px;
 }
 .overtitle-theme-dark {
-  color: var(--overtitle-color-theme--dark);
-  margin-bottom: 44px;
+  color: var(--overtitle-color-theme-dark);
 }
 .overtitle-theme-light {
   color: var(--overtitle-color-theme-light);
-  margin-bottom: 20px;
 }
 
-.main-title {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: var(--secondary-text-color-theme-dark);
-}
 .description {
   font-weight: 400;
   font-size: 18px;
@@ -143,9 +132,11 @@ address {
 }
 .section-title-light-theme {
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 20px;
 }
 .section-title-dark-theme {
   color: var(--secondary-text-color-theme-dark);
+  margin-bottom: 44px;
 }
 /* END COMPONENTS */
 
@@ -154,6 +145,8 @@ address {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+ 
+  background-color: blueviolet;
 }
 
 .header-container {
@@ -205,29 +198,175 @@ address {
 /* END HEADER */
 
 /* START HERO */
+.hero-container {
+  display: flex;
+  align-items: center;
+  
+}
+.hero-right-side {
+  
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 100px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/slider-img-3.jpg");
+  background-size: cover;
+  background-color: #303030; 
+  flex-grow: 1;
 
+}
+
+.hero-left-side {
+  width: 100px;
+  
+}
+.social-links-list {
+  display: flex;
+  align-items: center;
+  transform: rotate(270deg);
+}
+.social-links-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+.main-title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color-theme-dark);
+  margin-bottom: 20px;
+}
+.hero-description{
+  max-width: 400px;
+}
 /* END HERO */
 
 /* START ABOUT */
+.section-about {
+  background-color: var(--secondary-text-color-theme-dark);
+}
+.about-container {
+  display: flex;
+ 
+}
+.about-left-side {
+  display: flex;
+  margin-right: 64px;
+}
+.about-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+.about-right-side {
+  width: 500px;
+}
 .paragraph {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 /* END ABOUT */
 
 /* START PRICES */
+.section-prices {
+  
+  background-image: url(../images/price.png);
+  background-size: cover;
+  background-color: #111319;
+}
+
+
+.prices-box {
+  display: flex;
+  
+}
+.prices-box-list {
+  width: 585px;
+}
+.prices-box-list:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-box-list:last-child {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices-box-list-item {
+  flex-basis: 50%;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  
+}
+.prices-box-item {
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+.prices-box-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.prices-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /* END PRICES */
 
 /* START EXPIRIENCE */
+.section-expirience {
+  background-color: var(--secondary-text-color-theme-dark);
+  
+}
+.expirience-container {
+  display: flex;
+  justify-content: space-between;
+}
+.expirience-container-left,
+.expirience-container-right {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.expirience-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+
+  
+}
+.expirience-list-item {
+  width: 170px;
+  min-height: 134px;
+ 
+  padding: 21px;
+  background-color: #f7f7f7;
+
+}
+.expirience-list-item:nth-child(even){
+  margin-top: 30px;
+}
 .expirience-number {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 6px;
+}
+
+.expirience-number-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: var(--accent-color);
 }
 .expirience-number-description {
   font-weight: 600;
@@ -235,6 +374,10 @@ address {
   line-height: 1.36;
   color: var(--secondary-text-color-theme-light);
 }
+.expirience-description{
+  max-width: 460px;
+}
+
 /* END EXPIRIENCE */
 
 /* START TEAM */
@@ -273,14 +416,37 @@ address {
   margin-left: 30px;
   margin-top: 30px;
 }
-.team-contants-wrapper{
+.team-contants-wrapper {
   padding-top: 30px;
 }
 /* END TEAM */
-
-/* START ONLINE_BOOKING */
-.address {
+/* START GALLARY */
+.section-gallery {
+  background-color: var(--secondary-text-color-theme-dark);
 }
+.gallary-overtitle {
+  margin-bottom: 44px;
+}
+.gallary-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.gallary-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* END GALLARY */
+/* START ONLINE_BOOKING */
+.contact {
+  background-color: #191c26;
+  /* display: flex; */
+}
+
 .address-name {
   font-weight: 700;
 }
@@ -289,6 +455,20 @@ address {
 }
 /* END ONLINE_BOOKING */
 /* START FOOTER */
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container-list {
+  display: flex;
+}
+.footer-container-item:not(:last-child) {
+  margin-right: 40px;
+}
 .copyright {
   font-weight: 600;
   font-size: 11px;
