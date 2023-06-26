@@ -34,10 +34,11 @@
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-          <a class="logo link" href=""
-            ><img class="logo-img" src="./images/logo.svg" alt="site logo"
-          /></a>
-
+          <a class="logo link" href="./index.html">
+            <svg width="68" height="55">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="nav-list list">
             <li class="nav-list-item"><a class="nav-list-link link" href="#about">About</a></li>
             <li class="nav-list-item">
@@ -58,13 +59,8 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
-            <ul class="social-links-list">
-              <li class="social-links-list-item list">
-                <svg class="rectangle-light-theme rectancle-hero-left-side">
-                  <use href="./images/symbol-defs.svg#icon-rectangle-5"></use>
-                </svg>
-              </li>
-              <li class="social-links-list-item list">
+            <ul class="social-links-list list">
+              <li class="social-links-list-item">
                 <a
                   class="social-links-list-link link"
                   href=""
@@ -73,7 +69,7 @@
                   >Instagram</a
                 >
               </li>
-              <li class="social-links-list-item list">
+              <li class="social-links-list-item">
                 <a
                   class="social-links-list-link link"
                   href=""
@@ -85,12 +81,9 @@
             </ul>
           </div>
           <div class="hero-right-side">
-            <p class="overtitle overtitle-theme-dark">
-              <span class="rectangle"
-                ><svg class="rectangle-dark-theme">
-                  <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-              >A hair salon for men in Kyiv
-            </p>
+            <div class="overtitle-before-dark-theme">
+              <p class="overtitle overtitle-theme-dark">A hair salon for men in Kyiv</p>
+            </div>
             <h1 class="main-title">BarberShop</h1>
             <p class="hero-description description description-dark-theme">
               We are experts in trendy men's haircuts. <br />
@@ -121,12 +114,9 @@
             </li>
           </ul>
           <div class="about-right-side">
-            <p class="overtitle overtitle-theme-light">
-              <span class="rectangle"
-                ><svg class="rectangle-light-theme">
-                  <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-              >About
-            </p>
+            <div class="overtitle-before-light-theme">
+              <p class="overtitle overtitle-theme-light">About</p>
+            </div>
             <h2 class="section-title section-title-light-theme">Best Barbershop in your city</h2>
             <p class="description description-light-theme">
               If you want to add more confidence to your image, you should definitely visit us.
@@ -144,12 +134,9 @@
       <!-- PRICES -->
       <section class="section-prices section" id="prices">
         <div class="container">
-          <p class="overtitle overtitle-theme-dark">
-            <span class="rectangle"
-              ><svg class="rectangle-dark-theme">
-                <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-            >Spend your time with the best masters
-          </p>
+          <div class="overtitle-before-dark-theme">
+            <p class="overtitle overtitle-theme-dark">Spend your time with the best masters</p>
+          </div>
           <h2 class="section-title section-title-dark-theme">Services and prices</h2>
           <div class="prices-box">
             <div class="prices-box-list">
@@ -230,12 +217,9 @@
             </ul>
           </div>
           <div class="expirience-container-right">
-            <p class="overtitle overtitle-theme-light">
-              <span class="rectangle"
-                ><svg class="rectangle-light-theme">
-                  <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-              >Old traditional school
-            </p>
+            <div class="overtitle-before-light-theme">
+              <p class="overtitle overtitle-theme-light">Old traditional school</p>
+            </div>
             <h2 class="section-title section-title-light-theme">Why people come <br />to us?</h2>
             <p class="expirience-description description description-light-theme">
               Only good things are said about us. But it's better to see and feel 1 time than read
@@ -247,12 +231,9 @@
       <!-- TEAM -->
       <section class="section-team section" id="masters">
         <div class="container">
-          <p class="overtitle overtitle-theme-light">
-            <span class="rectangle"
-              ><svg class="rectangle-light-theme">
-                <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-            >For true enjoyers of the atmosphere
-          </p>
+          <div class="overtitle-before-light-theme">
+            <p class="overtitle overtitle-theme-light">For true enjoyers of the atmosphere</p>
+          </div>
           <h2 class="section-title section-title-light-theme">Our barbers</h2>
           <ul class="team">
             <li class="list team-card">
@@ -265,37 +246,37 @@
               <div class="team-contants-wrapper">
                 <h3 class="team-name">John Smith</h3>
                 <p class="team-profession">Extreme Barber</p>
+                <ul class="team-actions">
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="team-actions">
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
-                    <svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
-                    <svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="list team-card">
               <img
@@ -307,37 +288,37 @@
               <div class="team-contants-wrapper">
                 <h3 class="team-name">Michele Doe</h3>
                 <p class="team-profession">Extreme Barber</p>
+                <ul class="team-actions">
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="team-actions">
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="list team-card">
               <img
@@ -349,37 +330,37 @@
               <div class="team-contants-wrapper">
                 <h3 class="team-name">Alan Black</h3>
                 <p class="team-profession">Extreme Barber</p>
+                <ul class="team-actions">
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
+                      ><svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-actions-list list">
+                    <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
+                      <svg class="team-icon-button" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="team-actions">
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
-                    <svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer"
-                    ><svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="team-actions-list list">
-                  <a class="team-actions-link" href="" target="_blank" rel="noopener noreferrer">
-                    <svg class="team-icon-button">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
@@ -387,12 +368,9 @@
       <!-- GALLARY -->
       <section class="section-gallery section">
         <div class="container">
-          <p class="gallary-overtitle overtitle overtitle-theme-light">
-            <span class="rectangle"
-              ><svg class="rectangle-light-theme">
-                <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-            >In Latin, "barba" means "beard"
-          </p>
+          <div class="overtitle-before-light-theme gallary-overtitle">
+            <p class="overtitle overtitle-theme-light">In Latin, "barba" means "beard"</p>
+          </div>
           <h2 hidden>Gallary</h2>
           <ul class="gallary-list">
             <li class="gallary-list-item list">
@@ -431,7 +409,7 @@
         </div>
       </section>
       <!-- ONLINE_BOOKING -->
-      <div class="contact">
+      <div class="booking-contact">
         <div class="container">
           <div class="contact-section">
             <!-- CONTACT FORM -->
@@ -441,54 +419,52 @@
                 <button class="modal-btn modal-btn-theme-dark" type="button">Send</button>
               </div>
             </section>
+
             <!-- CONTACTS INFORMATION -->
             <section class="contacts section" id="contacts">
               <div class="contacts-container">
                 <h2 class="section-title section-title-dark-theme">Contacts</h2>
                 <address class="address">
                   <ul class="adress-list">
-                    <li class="adress-list-item list">
+                    <li class="address-list-item list">
                       <a
-                        class="link description description-dark-theme address-name"
+                        class="address-name link description description-dark-theme"
                         href="https://goo.gl/maps/Kb1ewV3vrd6khaFx8?coh=178573&amp;entry=tt"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span class="address-icon-item"
-                          ><svg class="address-icon">
-                            <use href="./images/symbol-defs.svg#icon-map-pin"></use>
-                          </svg> </span
-                        >st. Vasilkovaya, 7A Kiev, 08132</a
-                      >
+                      <div class="address-name-item"><svg class="address-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#map-pin"></use>
+                        </svg></div>
+                        st. Vasilkovaya, 7A Kiev, 08132
+                      </a>
                     </li>
-                    <li class="adress-list-item list">
-                      <a class="link description description-dark-theme" href="tel:+380441111111"
-                        ><span class="address-icon-item"
-                          ><svg class="address-icon">
-                            <use href="./images/symbol-defs.svg#icon-phone"></use>
-                          </svg> </span
-                        >+38 044 111 11 11</a
-                      >
-                    </li>
-                    <li class="adress-list-item list">
+                    <li class="address-list-item list">
                       <a
-                        class="link description description-dark-theme"
-                        href="mailto:barbershop@email.com"
-                        ><span class="address-icon-item"
-                          ><svg class="address-icon">
-                            <use href="./images/symbol-defs.svg#icon-mail"></use>
-                          </svg> </span
-                        >barbershop@email.com</a
+                        class="tel-mail-name link description description-dark-theme"
+                        href="tel:+380441111111"
+                        ><svg class="address-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#phone"></use>
+                        </svg>
+                        +38 044 111 11 11</a
                       >
+                    </li>
+                    <li class="address-list-item list">
+                      <a
+                        class="tel-mail-name link description description-dark-theme"
+                        href="mailto:barbershop@email.com"
+                      >
+                        <svg class="address-icon" width="24" height="24">
+                          <use href="./images/sprite.svg#mail"></use>
+                        </svg>
+                        barbershop@email.com
+                      </a>
                     </li>
                   </ul>
                 </address>
-                <p class="overtitle working-hours">
-                  <span class="rectangle"
-                    ><svg class="rectangle-dark-theme">
-                      <use href="./images/symbol-defs.svg#icon-rectangle-5"></use></svg></span
-                  >Working hours
-                </p>
+                <div class="overtitle-before-dark-theme">
+                  <p class="overtitle working-hours">Working hours</p>
+                </div>
                 <p class="description description-dark-theme">Every day from 9:00 to 22:00</p>
               </div>
             </section>
